@@ -27,7 +27,7 @@ class ChromeUpdater:
 
         self.connection = self.__init_sqlite()
 
-        # self.__kill_chrome()
+        self.__kill_chrome()
 
     def __kill_chrome(self):
         app_process.pkill(self.CHROME_PROCESS_NAME)
